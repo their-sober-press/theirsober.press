@@ -13,6 +13,25 @@ body {
   padding: 0 20px;
 }
 
+header {
+  max-width: 60em;
+  padding: 14px 10px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(167, 167, 167, 0.5);
+}
+
+header,
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+nav a {
+  padding: 10px 12px;
+}
+
 section {
   padding: 24px 20px;
   border-top: 1px solid rgba(167, 167, 167, 0.5);
@@ -50,11 +69,27 @@ a:hover {
   text-decoration: underline;
 }
 
+.nav-link--home {
+  margin: 0;
+  line-height: 1.4;
+  padding: 10px 12px;
+}
+
+.nav-link--home a {
+  color: #222222;
+}
+
+p,
+blockquote {
+  letter-spacing: 0.01em;
+  color: #222222;
+}
+
 blockquote {
   margin: 1em 0 2em;
   padding-left: 1em;
   max-width: 40em;
   font-size: 20px;
   font-style: italic;
-  border-left: 2px #000 solid;
+  border-left: 5px rgba(167, 167, 167, 0.5) solid;
 }
